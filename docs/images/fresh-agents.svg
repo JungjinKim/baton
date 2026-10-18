@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="310" viewBox="0 0 920 310" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="13">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <style>
+    .main  { fill:#eef3fb; stroke:#3b6fb6; stroke-width:1.5; }
+    .fresh { fill:#f4f4f4; stroke:#888; stroke-width:1.3; stroke-dasharray:4 3; }
+    .t  { fill:#222; }
+    .s  { fill:#555; font-size:11.5px; }
+    .h  { font-weight:bold; font-size:14px; }
+    .x  { fill:#999; text-decoration:line-through; }
+    .ln { stroke:#444; stroke-width:1.5; fill:none; marker-end:url(#arrow); }
+  </style>
+
+  <!-- 메인 -->
+  <rect class="main" x="30" y="30" width="400" height="230" rx="6"/>
+  <text class="t h" x="45" y="55">메인 (draft · inspect): 대화를 전부 안다</text>
+
+  <text class="x" x="50" y="90">대화 기록</text>
+  <text class="x" x="50" y="113">배경 서사 · 결론 · "확인했음" 목록</text>
+  <text class="x" x="50" y="136">계획 · 구현 서사 (inspect의 경우)</text>
+  <text class="s" x="300" y="113">넘기지 않는다</text>
+
+  <text class="t" x="50" y="175">Spec · 계획</text>
+  <text class="s" x="140" y="175">→ 추출: scratch/{slug}.plan.md</text>
+  <text class="t" x="50" y="200">diff · AC</text>
+  <text class="s" x="140" y="200">→ 추출: scratch/{slug}.diff · {slug}.ac.md</text>
+
+  <text class="s" x="50" y="240">프롬프트는 한두 줄: "입력: &lt;경로&gt;" 또는 "diff: &lt;경로&gt;" / "AC: &lt;경로&gt;"</text>
+
+  <!-- 화살표 -->
+  <path class="ln" d="M430,185 L560,185"/>
+  <text class="s" x="495" y="175" text-anchor="middle">경로만 넘긴다</text>
+
+  <!-- fresh -->
+  <rect class="fresh" x="560" y="60" width="330" height="200" rx="6"/>
+  <text class="t h" x="575" y="85">fresh 에이전트 (doubter · reviewer)</text>
+  <text class="s" x="575" y="115">받는 것: 파일 경로 한두 줄</text>
+  <text class="s" x="575" y="140">읽는 것: 그 파일 + 코드를 직접 + docs/agent</text>
+  <text class="s" x="575" y="165">못 보는 것: 대화 · 저자의 설명 · 의도</text>
+  <text class="s" x="575" y="190">도구: Read · Grep · Glob (편집·셸·위임 없음)</text>
+  <text class="s" x="575" y="215">판정: 실패 시나리오를 한 줄로 댈 수 있을 때만</text>
+  <text class="s" x="575" y="240">출력: 블로커/보강/과잉/의문 + 파일:라인</text>
+
+  <text class="s" x="30" y="292">저자의 가정이 검토에 섞이지 않는다. 문서와 diff에 없는 것은 없는 것으로 본다. 그래서 문서의 구멍이 드러난다.</text>
+</svg>

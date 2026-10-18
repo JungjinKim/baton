@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="13">
+  <style>
+    .human { fill:#fff4e5; stroke:#d98b1a; stroke-width:1.3; }
+    .read  { fill:#f1f1f1; stroke:#888;    stroke-width:1.3; }
+    .auto  { fill:#eef3fb; stroke:#3b6fb6; stroke-width:1.3; }
+    .none  { fill:#ffffff; stroke:#aaa;    stroke-width:1.2; stroke-dasharray:5 4; }
+    .t  { fill:#222; }
+    .s  { fill:#555; font-size:11.5px; }
+    .h  { font-weight:bold; font-size:12.5px; fill:#444; }
+    .g  { fill:#999; }
+  </style>
+
+  <!-- 열 머리 -->
+  <text class="h" x="30" y="24">층 (위로 갈수록 동작에 가깝다)</text>
+  <text class="h" x="420" y="24">보장하는 것</text>
+  <text class="h" x="700" y="24">누가 · 어떻게</text>
+
+  <!-- 사람 테스트 -->
+  <rect class="human" x="30" y="36" width="920" height="40" rx="5"/>
+  <text class="t" x="45" y="61">사람 테스트 (게이트2 표, signoff가 y/n/안 함 수집)</text>
+  <text class="t" x="420" y="61">돌려 보니 맞다</text>
+  <text class="s" x="700" y="61">사람 · 실제 실행</text>
+
+  <!-- reviewer -->
+  <rect class="read" x="30" y="84" width="920" height="40" rx="5"/>
+  <text class="t" x="45" y="109">reviewer (fresh · 6각도 · diff + AC만)</text>
+  <text class="t" x="420" y="109">읽어 보니 AC에 맞다</text>
+  <text class="s" x="700" y="109">fresh 에이전트 · 읽기 (정적)</text>
+
+  <!-- 자가검증 -->
+  <rect class="read" x="30" y="132" width="920" height="40" rx="5"/>
+  <text class="t" x="45" y="157">자가검증 (호출부 · 형제 요소 · 짝 파일)</text>
+  <text class="t" x="420" y="157">바꾼 것의 주변이 맞다</text>
+  <text class="s" x="700" y="157">implement 메인 · 읽기</text>
+
+  <!-- 빌드 -->
+  <rect class="auto" x="30" y="180" width="920" height="40" rx="5"/>
+  <text class="t" x="45" y="205">빌드 (헤더 검증 수단: 오류 0 + 변경 줄의 새 경고 0)</text>
+  <text class="t" x="420" y="205">컴파일된다</text>
+  <text class="s" x="700" y="205">자동 · 명령 실행</text>
+
+  <!-- Task Verify -->
+  <rect class="auto" x="30" y="228" width="920" height="40" rx="5"/>
+  <text class="t" x="45" y="253">Task Verify (grep · wc · numstat · "확인: 읽을 곳 → 기준")</text>
+  <text class="t" x="420" y="253">계획한 글자가 계획한 자리에 있다</text>
+  <text class="s" x="700" y="253">자동 · 명령 실행</text>
+
+  <!-- 없는 층 -->
+  <rect class="none" x="30" y="276" width="920" height="40" rx="5"/>
+  <text class="g" x="45" y="301">단위 · 통합 · E2E 테스트</text>
+  <text class="g" x="420" y="301">자동으로 돌려 보니 맞다</text>
+  <text class="g" x="700" y="301">저장소에 있으면 Verify로 들어간다</text>
+
+  <text class="s" x="30" y="344">지금 "동작"을 재는 층은 맨 위 한 줄, 사람뿐이다. 나머지는 "코드가 그렇게 생겼다"를 잰다.</text>
+</svg>

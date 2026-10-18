@@ -1,0 +1,13 @@
+{
+  "name": "baton",
+  "version": "0.3.0",
+  "author": {
+    "name": "JungjinKim",
+    "url": "https://github.com/JungjinKim"
+  },
+  "homepage": "https://github.com/JungjinKim/baton",
+  "repository": "https://github.com/JungjinKim/baton",
+  "license": "MIT",
+  "keywords": ["claude-code", "workflow", "code-review", "human-in-the-loop"],
+  "description": "사람 승인 게이트가 있는 4단계 작업 체인(draft → implement → inspect → signoff), 프로젝트 문서 생성(survey), 세션 인계(handoff). 저장소·언어에 묶이지 않는다."
+}

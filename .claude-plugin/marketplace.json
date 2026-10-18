@@ -1,0 +1,15 @@
+{
+  "name": "jungjinkim",
+  "owner": {
+    "name": "JungjinKim",
+    "url": "https://github.com/JungjinKim"
+  },
+  "description": "JungjinKim이 만든 Claude Code 플러그인 모음.",
+  "plugins": [
+    {
+      "name": "baton",
+      "source": "./",
+      "description": "사람 승인 게이트가 있는 4단계 작업 체인(draft → implement → inspect → signoff), 프로젝트 문서 생성(survey), 세션 인계(handoff)."
+    }
+  ]
+}
